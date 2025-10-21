@@ -1,0 +1,69 @@
+# Root .gitignore for Flutter learning workspace (multi-project)
+
+# General OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE/editor
+*.iml
+*.ipr
+*.iws
+.idea/
+# The .vscode folder can be useful to commit (launch/tasks). Uncomment to ignore.
+#.vscode/
+
+# Dart / Flutter
+**/.dart_tool/
+**/.packages
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.metadata
+**/.pub/
+**/.pub-cache/
+**/build/
+**/coverage/
+
+# Generated Dart files
+**/*.g.dart
+**/*.freezed.dart
+**/*.mocks.dart
+
+# Android
+**/android/local.properties
+**/android/key.properties
+**/*.jks
+**/*.keystore
+# Variant output folders created by Android Studio/Gradle
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# iOS / macOS
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/ephemeral/
+**/macos/Flutter/ephemeral/
+# CocoaPods (optional to commit — ignoring keeps repo smaller)
+**/ios/Pods/
+**/macos/Pods/
+**/Podfile.lock
+# Xcode user-specific data
+**/*.xcworkspace/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+**/*.xcuserstate
+
+# Windows / Linux
+*~
+
+# Flutter symbolication / obfuscation outputs
+**/app.*.symbols
+**/app.*.map.json
+
+# Firebase configuration (keep secrets out of VCS)
+**/google-services.json
+**/GoogleService-Info.plist
+**/lib/firebase_options.dart
+
+# Environment files
+**/.env
+**/.env.*
