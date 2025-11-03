@@ -38,6 +38,7 @@ dependencies:
   cached_network_image: ^3.4.1
   video_player: ^2.9.2
   audioplayers: ^6.1.0
+  intl: ^0.19.0
 
 dev_dependencies:
   flutter_test:

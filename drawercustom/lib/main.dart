@@ -3,6 +3,7 @@ import 'pages/broadcast_receiver_page.dart';
 import 'pages/image_scale_page.dart';
 import 'pages/video_page.dart';
 import 'pages/audio_page.dart';
+import 'pages/last_broadcast_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -50,6 +51,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<Widget> _pages = [
     const BroadcastReceiverPage(),
+    const LastBroadcastPage(),
     const ImageScalePage(),
     const VideoPage(),
     const AudioPage(),
@@ -57,6 +59,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<String> _pageTitles = [
     'Broadcast Receiver',
+    'Last Broadcast',
     'Image Scale',
     'Video',
     'Audio',
@@ -64,6 +67,7 @@ class _HomePageState extends State<HomePage> {
 
   final List<IconData> _pageIcons = [
     Icons.broadcast_on_home,
+    Icons.history,
     Icons.image,
     Icons.video_library,
     Icons.audio_file,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'custom_broadcast_receiver_page.dart';
+import '../services/broadcast_service.dart';
 
 class BroadcastInputPage extends StatefulWidget {
   const BroadcastInputPage({super.key});
@@ -20,6 +21,8 @@ class _BroadcastInputPageState extends State<BroadcastInputPage> {
 
   void _sendBroadcast() {
     if (_formKey.currentState!.validate()) {
+      BroadcastService().saveLastBroadcast(_messageController.text);
+
       Navigator.push(
         context,
         MaterialPageRoute(
